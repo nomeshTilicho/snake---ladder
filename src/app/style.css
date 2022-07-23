@@ -1,0 +1,48 @@
+.app-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5px;
+}
+
+.app-container .score-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.app-container .dice-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.game-over-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+}
+
+button.start {
+    height: 200px;
+    width: 200px;
+    font-size: 20px;
+}
+
+button.start:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+button.dice {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}

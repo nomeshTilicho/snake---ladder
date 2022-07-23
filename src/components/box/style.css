@@ -1,0 +1,81 @@
+.box {
+    /* text-align: center; */
+    border: 1px solid #333;
+    color: black;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    position: relative;
+    font-size: 12px;
+}
+
+
+[class^="player-1"] {
+    height: 20px;
+    width: 20px;
+    background: black;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+[class="player-2"] {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: rgb(255, 0, 0);
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.snake, .ladder {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.ladder {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    color: white;
+     background-color: coral;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 10px 5px;
+}
+
+.snake {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    color: white;
+     background-color: forestgreen;
+    font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0 10px 5px;
+}
+
+.box-index {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    color: black;
+    filter: none;
+    padding: 0 2px;
+}
